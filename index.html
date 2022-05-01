@@ -83,7 +83,7 @@
         <div class="container h-100">
           <div class="d-flex justify-content-center h-100 pb-3">
             <div class="searchbar overflow-hidden">
-              <input class="search_input" id="search" type="text" name="search" placeholder="Search..." >
+              <input class="search_input" id="search" type="text" name="search" placeholder=" Trouver Mon Garde-Meubles" >
               <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
             </div>
           </div>
@@ -128,7 +128,7 @@
  
 <section class="card-group container d-flex justify-content-center">
   <div class="row d-flex justify-content-center">
-    <div class="card card-box text-center " style="width: 15rem;">
+    <div class="card card-box text-center d-flex justify-content-sm-center " style="width: 15rem;">
       <div class="card-header">
         <h3>Garde Meubles Toulouse Sud</h3>
       </div>
@@ -151,7 +151,7 @@
         </p>
       </div>
     </div>
-    <div class="card card-box text-center  " style="width: 15rem;">
+    <div class="card card-box text-center  d-flex justify-content-sm-center" style="width: 15rem;">
       <div class="card-header ">
         <h3>Garde Meubles Toulouse Nord-Est</h3>
     
@@ -175,7 +175,7 @@
         </p>
       </div>
     </div>
-    <div class="card card-box text-center" style="width: 15rem;">
+    <div class="card card-box text-center d-flex justify-content-sm-center" style="width: 15rem;">
       <div class="card-header ">
         <h3>Garde Meubles Toulouse Université</h3>
     
@@ -201,7 +201,7 @@
         </p>
       </div>
     </div>
-    <div class="card card-box text-center " style="width: 15rem;">
+    <div class="card card-box text-center d-flex justify-content-sm-center" style="width: 15rem;">
       <div class="card-header ">
         <h3>Garde Meubles Toulouse Ouest</h3>
     
@@ -251,7 +251,7 @@
       $.getJSON('data.json', function (data) {
         $.each(data, function (key, value) {
           if (value.name.search(expression) != -1 || value.addresse.search(expression) != -1) {
-            $('#result').append('<li class="list-group-item link-class"><img src="' + value.image + '" height="40" width="40" class="img-thumbnail" /> ' + value.name + ' | <span class="text-muted">' + value.addresse + ' | <span class="text-muted">' + value.telephone + '</span></li>');
+            $('#result').append('<li class="list-group-item link-class badge bg-light text-wrap"><img src="' + value.image + '" height="40" width="40" class="img-thumbnail" /> ' + value.name + ' | <span class="text-muted">' + value.addresse + ' | <span class="text-muted">' + value.telephone + '</span></li>');
           }
         });
       });
