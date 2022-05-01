@@ -5,7 +5,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background: linear-gradient(#e66465, #A0BCC2); */
   background-color: #fff;
 }
 
@@ -16,16 +15,11 @@ html {
 
 nav {
   background: #e2eaeb;
-  /* color: #e74c3c; */
-  /* padding-left: 2em; */
-
   font-size: small;
 }
 
 header {
   padding: 4em;
-  /* background:  #A0BCC2; */
-  /* background: #e2eaeb; */
 }
 
 .searchbar {
@@ -96,8 +90,6 @@ header {
     #12d8fa2b 51%,
     #1fa2ff36 100%
   );
-  /* background: rgb(230, 154, 15); */
-  /* background: linear-gradient(#e66465, #A0BCC2); */
 }
 
 .card-box:after {
@@ -110,11 +102,6 @@ header {
   left: 0;
   right: 0;
   top: 0;
-}
-
-#title {
-  /* background-color: #ff4c68; */
-  /* background: linear-gradient(#e66465, #A0BCC2); */
 }
 
 h1 {
@@ -139,7 +126,6 @@ h1 {
 }
 .storage {
   width: 100%;
-  /* border-radius: 50px; */
 }
 
 h4 {
